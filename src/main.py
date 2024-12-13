@@ -37,6 +37,8 @@ class blipGrapher:
         rectGlyph = glyphs.Rect(x='time',y='sample', width=self.bWidth, height=self.bHeight)
         self.p.add_glyph(dataSource,rectGlyph)
         self.p.add_layout(labels)
+        self.p.xaxis.axis_label = "Time (ms)"
+        self.p.yaxis.axis_label = "Sample Run"
         show(self.p)
 
 class blipData:
